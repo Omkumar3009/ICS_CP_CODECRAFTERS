@@ -48,6 +48,14 @@ The starting positions for the four discs (two "x " and two "o ") are set in the
 A welcome message and a menu are displayed, prompting the user to choose an option.
 Options include viewing team members, rules, playing the game, or exiting.
 
+Enter *1* for viewing the Team Members.
+
+Enter *2* for viewing the Rules of the Othello GamE.
+
+Enter *3* for playing the Game.
+
+Enter *4* for Exit.
+
 ***Menu Option Handling:***
 
 If the user chooses to view team members (b == 1) or rules (b == 2), the corresponding information is displayed.
