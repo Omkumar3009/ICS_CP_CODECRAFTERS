@@ -952,8 +952,8 @@ int main()
                     else if(end2==2)
                     {
                         break;
-
                     }
+
                 }
 
 
@@ -1010,43 +1010,41 @@ int main()
                         break;
                     }
                 }
+            }
 
-
-                if(c!=0)
+            count_x=0,count_y=0;
+            for(int i=0; i<8; i++)
+            {
+                for(int j=0; j<8; j++)
                 {
-                    count_x=0,count_y=0;
-                    for(int i=0; i<8; i++)
+                    if(strcmp(a[i][j],"x ")==0)
                     {
-                        for(int j=0; j<8; j++)
-                        {
-                            if(strcmp(a[i][j],"x ")==0)
-                            {
-                                count_x++;
-                            }
-                            else if(strcmp(a[i][j],"o ")==0)
-                            {
-                                count_y++;
-                            }
-                        }
+                        count_x++;
                     }
-
-
-                    if(count_x > count_y)
+                    else if(strcmp(a[i][j],"o ")==0)
                     {
-                        printf("CONGRATULATIONS...Winner is %s !!!\n\n",p1);
+                        count_y++;
                     }
-                    else if(count_y > count_x)
-                    {
-                        printf("CONGRATULATIONS...Winner is %s !!!\n\n",p2);
-                    }
-                    else
-                    {
-                        printf("OH IT'S A TIE\n\n");
-                    }
-
                 }
             }
+
+
+            if(count_x > count_y)
+            {
+                printf("CONGRATULATIONS...Winner is %s !!!\n\n",p1);
+            }
+            else if(count_y > count_x)
+            {
+                printf("CONGRATULATIONS...Winner is %s !!!\n\n",p2);
+            }
+            else
+            {
+                printf("OH IT'S A TIE\n\n");
+            }
+
+
         }
+
 
         else if(b==4)
         {
